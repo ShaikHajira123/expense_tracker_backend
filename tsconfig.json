@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",  // Use CommonJS for Node.js
-    "strict": true,        // Enable strict type-checking options
-    "esModuleInterop": true,
-    "skipLibCheck": true,  // Skip type checking of declaration files
+    "target": "ES6",         // Use ES6 for async/await support
+    "module": "commonjs",       
+    "esModuleInterop": true, // Allow default imports
+    "skipLibCheck": true,    // Skip checking library files (useful for node_modules)
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",    // Output compiled files to the 'dist' folder
-    "resolveJsonModule": true  // Allow importing JSON files
+    "outDir": "./dist",      // Output directory for compiled files
+    "resolveJsonModule": true,
   },
-  "include": ["src/**/*.ts"],  // Include all TypeScript files in the 'src' folder
-  "exclude": ["node_modules"]  // Exclude the 'node_modules' folder
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
