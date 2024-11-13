@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start:dev": "nodemon -r ts-node/register src/index.ts",
-    "start:debug":"nodemon --exec ts-node src/index.ts --debug --watch"
+    "start:debug": "nodemon --exec ts-node src/index.ts --debug --watch"
   },
   "repository": {
     "type": "git",
