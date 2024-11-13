@@ -1,6 +1,5 @@
-import { timeStamp } from "console";
 
-const mongoose = require('mongoose');
+const mongoose3 = require('mongoose');
 
 interface User {
     email: string;
@@ -8,7 +7,7 @@ interface User {
 }
 
 
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose3.Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     monthlyLimit: { type: Number, default: 1000 }, 
@@ -18,4 +17,4 @@ const userSchema = new mongoose.Schema({
     timestamps: true, 
 });
 
-module.exports = mongoose.model('users', userSchema);
+module.exports = mongoose3.model('users', userSchema);
